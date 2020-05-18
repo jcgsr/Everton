@@ -2,6 +2,10 @@
 
 * { box-sizing: border-box; }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*  TAGS  */
 body{
 	width: 100%;
@@ -19,9 +23,14 @@ aside{
 
 h2{
 	text-align: center;
+	padding: 1.5rem;
 }
 hr{
 	display: none;
+}
+
+li{
+	list-style: none;
 }
 
 /*  CLASSES  */
@@ -50,6 +59,20 @@ hr{
 	width: 15rem;
 }
 
+.item-side:hover{
+	color: #424242; 
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+	opacity: 1;
+	transform: scale(3);
+	-ms-transform: scale(3); /* IE 9 */
+	-webkit-transform: scale(3); /* Safari and Chrome */
+}
+
+
 .banner{
 	font-size: 4rem;
 	text-align: center;
@@ -65,13 +88,21 @@ hr{
 	font-size: 1.5rem;
 }
 
-.dropdown-item{
+.dropdown-item a{
 	font-size: 1.2rem;
+	text-decoration: none;
+	color: #212529;
 }
 
 .dropdown-item:hover{
 	background-color: gray;
+	color: white;	
+}
+
+.dropdown-item a:hover{
+	background-color: gray;
 	color: white;
+	text-decoration: none;
 }
 
 .item-side{
@@ -118,6 +149,33 @@ hr{
 
 .bio-container{
 	display: flex;
+	max-width: 60%;
+	text-align: center;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 1rem;
+}
+.bio-item + .bio-item{
+	margin-left: 2rem;
+}
+
+.social-list{
+	display: flex;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+.fab:hover{
+	color: #094356;
+}
+
+.social-list__item + .social-list__item{
+	margin-left: 2rem;
+}
+
+.fab{
+	font-size: 2rem;
+	color: mediumaquamarine;
 }
 
 /*  IDS  */
@@ -125,7 +183,8 @@ hr{
 	width: 100%;
 	background-color: #48D1CC;
 	text-align: center;
-	padding: .5rem;
+	padding: 1rem;
+	font-size: smaller
 }
 
 #bio{
@@ -134,10 +193,32 @@ hr{
 	text-align: center;
 	margin: 0 auto;
 	padding: 1rem 3rem;
+	max-height: 50%;
 }
 
 #bio img{
 	width: 7rem;
+}
+#bio-photo{
+	width: 400px;
+	height: 100px;
+}
+
+#contact{
+	background-color: #099954;
+}
+
+#contact-item{
+	display: flex;
+}
+
+#dev{
+	font-size: x-small;
+	margin-bottom: 1px;
+}
+
+#dev a{
+	color: #212529;
 }
 
 @media(max-width: 600px){
@@ -165,4 +246,12 @@ hr{
 		display: flex;
 	}
 
+	.bio-container{
+		display: inline;
+		text-align: left;
+		margin: 0 auto;
+	}
+	#bio-photo{
+		padding: 1rem;
+	}	
 }

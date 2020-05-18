@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/blank-memo-notebook-pad-461435.ico">
 </head>
 <body>
@@ -21,8 +23,8 @@
 		    Menu
 		  </button>
 		  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-		    <button class="dropdown-item" type="button">Biografia</button>
-		    <button class="dropdown-item" type="button">Link 1</button>
+		    <button class="dropdown-item" type="button"><a href="#bio">Biografia</a></button>
+		    <button class="dropdown-item" type="button"><a href="#contact">Contatos</a></button>
 		    <button class="dropdown-item" type="button">Link 2</button>
 		  </div>
 		</div>
@@ -60,14 +62,65 @@
 					<span> <img src="img/3.jpg" class="item-side" alt="Tirinha 3"></span>
 
 					<span> <img src="img/4.jpg" class="item-side" alt="Tirinha 4"></span>
+				</div>				
+			</div>
+			<div id="bio">
+				<h2>BIOGRAFIA</h2>
+				<div class="bio-container">
+					<img src="img/1.jpg" alt="Foto Everton" class="bio-item" id="bio-photo">
+					<p class="bio-item">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sapiente provident commodi dolore assumenda omnis, ad veniam cumque recusandae repellendus magnam nemo facilis suscipit magni quibusdam neque dignissimos aliquid pariatur.
+					</p>
+					<p class="bio-item">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam similique quibusdam ratione sapiente adipisci, asperiores odit, est quaerat sint obcaecati a aliquam minima, quas magni consequatur nobis omnis praesentium ab.
+					</p>
 				</div>
 			</div>
+			<section id="contact">
+				<h2>CONTATOS</h2>
+				<div id="contact-item">
+					<ul class="social-list">
+	
+			            <li class="social-list__item">
+			                <a href="#" class="social-list__link">
+			                    <i class="fab fa-linkedin-in"></i>
+			                </a>
+			            </li>
+			            <li class="social-list__item">
+			                <a href="#" class="social-list__link">
+			                    <i class="fab fa-instagram"></i>
+			                </a>
+			            </li>
+			            <li class="social-list__item">
+			                <a href="#" class="social-list__link">
+			                    <i class="fab fa-twitter"></i>
+			                </a>
+			            </li>
+			            <li class="social-list__item">
+			                <a href="#" class="social-list__link">
+			                    <i class="fab fa-whatsapp"></i>
+			                </a>
+			            </li>
+			            <li class="social-list__item">
+			                <a href="#" class="social-list__link">
+			                    <i class="fab fa-facebook-f"></i>
+			                </a>
+			            </li>				
+					</ul>
+		        </div>	
+				
+			</section>
 
 		</main>
 		
 		<footer id="footer">
-			&copy; 2020 - Everton Pessan <br>
-			Todos os direitos reservados
+			<p>
+				&copy; 2020 - Everton Pessan <br>
+				Todos os direitos reservados.
+			</p>
+			<p id="dev">
+				Desenvolvido por <a href="https://jcgsr.github.io/" target="_blank" class="badge badge-info">Jovane Rocha</a>
+			</p>
 		</footer>
 
 	
