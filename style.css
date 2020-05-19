@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
 
-* { box-sizing: border-box; }
+*{ box-sizing: border-box; }
 
 html{
     scroll-behavior: smooth;
@@ -8,13 +8,12 @@ html{
 
 /*  TAGS  */
 body{
-	width: 100%;
 	background-color: white;
 	font-family: 'Ubuntu', sans-serif;
 }
 
 img{
-	width: 100%;
+	max-width: 100%;
 }
 
 aside{
@@ -37,6 +36,11 @@ li{
 .container{
 	margin-left: 1.5rem;
 	display: flex;
+}
+
+.wrap-up{
+	width: 100%;
+	margin: 0 auto;
 }
 
 .container-b{
@@ -68,15 +72,13 @@ li{
 	transition: all .3s ease-in;
 	opacity: 1;
 	transform: scale(3);
-	-ms-transform: scale(3); /* IE 9 */
-	-webkit-transform: scale(3); /* Safari and Chrome */
+	-ms-transform: scale(3); 
+	-webkit-transform: scale(3); 
 }
-
 
 .banner{
 	font-size: 4rem;
 	text-align: center;
-	width: 100%;
 	background-color: #48D1CC;
 }
 
@@ -107,6 +109,13 @@ li{
 
 .item-side{
 	padding: .5rem;
+	cursor: pointer;
+	width: 300px;
+	height: 200px;
+}
+.item-side.full-size {
+	width: 50rem;
+	height: 30rem;
 }
 
 .item-side + .item-side {
@@ -221,7 +230,21 @@ li{
 	color: #212529;
 }
 
-@media(max-width: 600px){
+#latest{
+	background-color: #656497;
+	display: block;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+#latest img{
+	width: 35%;
+	height: 35%;
+}
+
+/*  MEDIA  */
+@media(max-width: 800px){
+	
 	.container{
 		display: block;
 		margin: 0 auto;
@@ -233,13 +256,8 @@ li{
 
 	.container-b{
 		flex-direction: column;
-		margin: 0 auto;
-		width: 100%;
+		margin: 0 auto;		
 		padding: .5rem;
-	}
-
-	.container-b .item-side{
-	width: 100%;
 	}
 
 	.h-line{
@@ -251,7 +269,7 @@ li{
 		text-align: left;
 		margin: 0 auto;
 	}
-
+	
 	.item-side:hover{
 	color: #424242; 
 	-webkit-transition: all .3s ease-in;
@@ -261,8 +279,8 @@ li{
 	transition: all .3s ease-in;
 	opacity: 1;
 	transform: scale(1);
-	-ms-transform: scale(1); /* IE 9 */
-	-webkit-transform: scale(1); /* Safari and Chrome */
+	-ms-transform: scale(1); 
+	-webkit-transform: scale(1); 
 }
 	#bio-photo{
 		padding: 1rem;

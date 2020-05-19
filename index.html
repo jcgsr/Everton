@@ -10,119 +10,125 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/pessan.ico">
 </head>
 <body>
 
-	<div class="banner">TIRAS DO PESSAN</div>
-	
-	
-		<div class="dropdown">
-		  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		    Menu
-		  </button>
-		  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-		    <button class="dropdown-item" type="button"><a href="#bio">Biografia</a></button>
-		    <button class="dropdown-item" type="button"><a href="#contact">Contatos</a></button>
-		    <button class="dropdown-item" type="button">Link 2</button>
-		  </div>
-		</div>
-		<main>
-			<div class="container">
-			
-				<aside class="left-sidebar row">
-					<span class="circle" class="item-side"></span>
-					<a href="#bio"><p>SOBRE O AUTOR</p></a>
-
-					<span> <img src="img/1.jpg" class="item-side" alt="Tirinha 1"></span>
-					
-					<span class="circle c1" class="item-side"></span><a href="#"><p>HIPERLINK 1</p></a>
-
-					<span class="circle c2" class="item-side"></span><a href="#"><p>HIPERLINK 2</p></a>				
-
-				</aside>
-
-			
-				<div class="v-line row"></div>
-				<div class="h-line"></div>
-				
-				<div class="container-b">
-
-					<span> <img src="img/2.jpg" class="item-side" alt="Tirinha 2"></span>
-
-					<span> <img src="img/3.jpg" class="item-side" alt="Tirinha 3"></span>
-
-					<span> <img src="img/4.jpg" class="item-side" alt="Tirinha 4"></span>
-
-					<span> <img src="img/1.jpg" class="item-side" alt="Tirinha 1"></span>
-
-					<span> <img src="img/2.jpg" class="item-side" alt="Tirinha 2"></span>
-
-					<span> <img src="img/3.jpg" class="item-side" alt="Tirinha 3"></span>
-
-					<span> <img src="img/4.jpg" class="item-side" alt="Tirinha 4"></span>
-				</div>				
-			</div>
-			<div id="bio">
-				<h2>BIOGRAFIA</h2>
-				<div class="bio-container">
-					<img src="img/1.jpg" alt="Foto Everton" class="bio-item" id="bio-photo" data-aos="fade-up">
-					<p class="bio-item" data-aos="fade-left">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sapiente provident commodi dolore assumenda omnis, ad veniam cumque recusandae repellendus magnam nemo facilis suscipit magni quibusdam neque dignissimos aliquid pariatur.
-					</p>
-					<p class="bio-item" data-aos="fade-right">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam similique quibusdam ratione sapiente adipisci, asperiores odit, est quaerat sint obcaecati a aliquam minima, quas magni consequatur nobis omnis praesentium ab.
-					</p>
-				</div>
-			</div>
-			<section id="contact">
-				<h2>CONTATOS</h2>
-				<div id="contact-item">
-					<ul class="social-list">
-	
-			            <li class="social-list__item">
-			                <a href="#" class="social-list__link">
-			                    <i class="fab fa-linkedin-in"></i>
-			                </a>
-			            </li>
-			            <li class="social-list__item">
-			                <a href="#" class="social-list__link">
-			                    <i class="fab fa-instagram"></i>
-			                </a>
-			            </li>
-			            <li class="social-list__item">
-			                <a href="#" class="social-list__link">
-			                    <i class="fab fa-twitter"></i>
-			                </a>
-			            </li>
-			            <li class="social-list__item">
-			                <a href="#" class="social-list__link">
-			                    <i class="fab fa-whatsapp"></i>
-			                </a>
-			            </li>
-			            <li class="social-list__item">
-			                <a href="#" class="social-list__link">
-			                    <i class="fab fa-facebook-f"></i>
-			                </a>
-			            </li>				
-					</ul>
-		        </div>	
-				
-			</section>
-
-		</main>
+	<div class="wrap-up">
+		<div class="banner">TIRAS DO PESSAN</div>	
 		
-		<footer id="footer">
-			<p>
-				&copy; 2020 - Everton Pessan <br>
-				Todos os direitos reservados.
-			</p>
-			<p id="dev">
-				Desenvolvido por <a href="https://jcgsr.github.io/" target="_blank" class="badge badge-info">Jovane Rocha</a>
-			</p>
-		</footer>
+			<div class="dropdown">
+			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Menu
+			  </button>
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+			    <button class="dropdown-item" type="button"><a href="#bio">Biografia</a></button>
+			    <button class="dropdown-item" type="button"><a href="#contact">Contatos</a></button>
+			    <button class="dropdown-item" type="button"><a href="#latest">Última Atualização</a></button>
+			  </div>
+			</div>
+			<main>
+				<div class="container">
+				
+					<aside class="left-sidebar row">
+						<span class="circle" class="item-side"></span>
+						<a href="#bio"><p>SOBRE O AUTOR</p></a>
 
+						<span> <a href="img/1.jpg"><img src="img/1.jpg" class="item-side" alt="Tirinha 1"></a></span>
+						
+						<span class="circle c1" class="item-side"></span><a href="#"><p>HIPERLINK 1</p></a>
+
+						<span class="circle c2" class="item-side"></span><a href="#"><p>HIPERLINK 2</p></a>				
+
+					</aside>
+
+				
+					<div class="v-line row"></div>
+					<div class="h-line"></div>
+					
+					<div class="container-b">
+
+						<span><a href="img/2.jpg"><img src="img/2.jpg" class="item-side" alt="Tirinha 2"></a></span>
+
+						<span><a href="img/3.jpg"><img src="img/3.jpg" rel="teste" class="item-side" alt="Tirinha 3"></a></span>
+
+						<span><a href="img/4.jpg"><img src="img/4.jpg" rel="teste" class="item-side" alt="Tirinha 4"></a></span>
+
+						<span><a href="img/1.jpg"><img src="img/1.jpg" rel="teste" class="item-side" alt="Tirinha 1"></a></span>
+
+						<span><a href="img/2.jpg"><img src="img/2.jpg" rel="teste" class="item-side" alt="Tirinha 2"></a></span>
+
+						<span><a href="img/3.jpg"><img src="img/3.jpg" rel="teste" class="item-side" alt="Tirinha 3"></a></span>
+
+						<span><a href="img/4.jpg"><img src="img/4.jpg" rel="teste" class="item-side" alt="Tirinha 4"></a></span>
+						
+					</div>				
+				</div>
+
+				<section id="latest">
+					<h2>ÚLTIMA ATUALIZAÇÃO</h2>
+					<span> <a href="img/1.jpg"><img src="img/1.jpg" class="item-side" alt="Tirinha 1"></a></span>
+				</section>
+				
+				<div id="bio">
+					<h2>BIOGRAFIA</h2>
+					<div class="bio-container">
+						<img src="img/1.jpg" alt="Foto Everton" class="bio-item" id="bio-photo">
+						<p class="bio-item">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sapiente provident commodi dolore assumenda omnis, ad veniam cumque recusandae repellendus magnam nemo facilis suscipit magni quibusdam neque dignissimos aliquid pariatur.
+						</p>
+						<p class="bio-item">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam similique quibusdam ratione sapiente adipisci, asperiores odit, est quaerat sint obcaecati a aliquam minima, quas magni consequatur nobis omnis praesentium ab.
+						</p>
+					</div>
+				</div>
+				<section id="contact">
+					<h2>CONTATOS</h2>
+					<div id="contact-item">
+						<ul class="social-list">
+		
+				            <li class="social-list__item">
+				                <a href="#" class="social-list__link">
+				                    <i class="fab fa-linkedin-in"></i>
+				                </a>
+				            </li>
+				            <li class="social-list__item">
+				                <a href="#" class="social-list__link">
+				                    <i class="fab fa-instagram"></i>
+				                </a>
+				            </li>
+				            <li class="social-list__item">
+				                <a href="#" class="social-list__link">
+				                    <i class="fab fa-twitter"></i>
+				                </a>
+				            </li>
+				            <li class="social-list__item">
+				                <a href="#" class="social-list__link">
+				                    <i class="fab fa-whatsapp"></i>
+				                </a>
+				            </li>
+				            <li class="social-list__item">
+				                <a href="#" class="social-list__link">
+				                    <i class="fab fa-facebook-f"></i>
+				                </a>
+				            </li>				
+						</ul>
+			        </div>	
+					
+				</section>
+
+			</main>
+			
+			<footer id="footer">
+				<p>
+					&copy; 2020 - Everton Pessan <br>
+					Todos os direitos reservados.
+				</p>
+				<p id="dev">
+					Desenvolvido por <a href="https://jcgsr.github.io/" target="_blank" class="badge badge-info">Jovane Rocha</a>
+				</p>
+			</footer>
+	</div>
 	
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -134,7 +140,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="index.js"></script>
+   
+    
 </body>
 </html>
