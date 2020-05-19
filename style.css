@@ -284,5 +284,10 @@ li{
 }
 	#bio-photo{
 		padding: 1rem;
-	}	
+	}
+
+	#latest img{
+	width: 80%;
+	height: 80%;
+}	
 }
